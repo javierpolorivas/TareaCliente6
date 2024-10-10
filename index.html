@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h2>Formulario de Contacto</h2>
+    <form id="contactForm" action="/submit" method="POST">
+
+        <label for="asunto">Asunto:</label><br>
+        <input type="text" id="asunto" name="asunto" placeholder="Introduce el asunto" required><br>
+        <span id="error-asunto" class="error"></span><br><br>
+
+        <label for="cc">Correo CC:</label><br>
+        <input type="email" id="cc" name="cc" placeholder="Introduce un correo electrónico válido"><br>
+        <span id="error-cc" class="error"></span><br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" placeholder="Introduce tu mensaje" required></textarea><br>
+        <span id="error-mensaje" class="error"></span><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

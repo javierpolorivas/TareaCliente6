@@ -1,0 +1,15 @@
+.error {
+    color: red;
+    display: none;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.input-error {
+    border-color: red;
+}
+
+.input-success {
+    border-color: green;
+}
+
